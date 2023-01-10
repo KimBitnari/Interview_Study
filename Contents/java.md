@@ -78,11 +78,3 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
-
-
-<details>
-<summary><strong>인터셉터와 필터의 차이점은 무엇인가요?</strong></summary>  
-<hr>
-<ul><li>답변</li></ul>
-<hr>
-</details>
