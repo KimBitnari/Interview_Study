@@ -70,3 +70,12 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+
+
+<details>
+<summary><strong>call by reference, call by value에 대해 설명해</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
