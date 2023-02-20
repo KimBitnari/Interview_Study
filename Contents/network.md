@@ -46,3 +46,10 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+<details>
+<summary><strong>주소창에 www.naver.com을 입력했을 때 일어나는 과정을 설명해보세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
