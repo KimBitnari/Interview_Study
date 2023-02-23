@@ -53,3 +53,38 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+<details>
+<summary><strong>HTTP와 HTTPS의 차이점에 대해서 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>Restful이란 무엇인가요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>CORS란 무엇이며 이것에 대해서 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>OSI7계층과 그 존재 이유, TCP/IP 4계층에 대해 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>SSL Handshake에 대해서 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
