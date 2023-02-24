@@ -25,7 +25,39 @@
 
 
 <details>
+<summary><strong>HTTP와 HTTPS의 차이점(+ 통신 방식의 차이)이 무엇인가요?</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>HTTP의 비연결성을 해결하기 위한 방법을 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>쿠키(Cookie)와 세션(Session)의 차이점에 대해서 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
 <summary><strong>HTTP method에 대해 아는 만큼 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>HTTP 1.0 / 1.1 / 2.0 / 3.0 의 차이점에 대해서 설명해주세요</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
 <hr>
@@ -62,6 +94,13 @@
 </details>
 
 <details>
+<summary><strong>Rest와 RestAPI에 대해서 설명해주세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
 <summary><strong>Restful이란 무엇인가요.</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
@@ -84,6 +123,34 @@
 
 <details>
 <summary><strong>SSL Handshake에 대해서 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>3-Handshaking과 4-Handshaking의 과정에 대해서 설명해보세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>세션 기반 인증과 토큰 기반 인증의 차이는 무엇인가요?</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>JWT 토큰에 대해서 설명해주세요.</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>대칭키, 비대칭키 암호화 방식에 대해서 설명해주세요.</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
 <hr>
