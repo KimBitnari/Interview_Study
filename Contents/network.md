@@ -3,7 +3,10 @@
 <details>
 <summary><strong>TCP UDP 차이점이 무엇인가요?</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>TCP는 연결형 서비스로 3-way handshaking 과정을 통해 연결을 설정하기 때문에 높은 신뢰성을 보장하지만, 속도가 비교적 느리다는 단점이 있습니다.</li>
+  <li>UDP는 비연결형 서비스로 3-way handshaking을 사용하지 않기 때문에 신뢰성이 떨어지는 단점이 있지만, 데이터 수신 여부를 확인하지 않기 때문에 속도가 빠르다는 장점이 있습니다.</li>
+</ul>
 <hr>
 </details>
 
@@ -11,7 +14,13 @@
 <details>
 <summary><strong>HTTP responce 상태 코드에 대해 설명해보세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>상태코드는 클라이언트가 서버를 향해 보낸 리퀘스트의 결과가 어떻게 되었는지 알려주는 역할을 합니다.</li>
+  <li>1XX 코드는 리퀘스트를 받아들여 처리중을 나타냅니다.</li>
+  <li>2XX 코드는 리퀘스트를 정상적으로 처리했음을 의미합니다.</li>
+  <li>3XX 코드는 리퀘스트를 완료하기 위해 추가 동작이 필요함을 의미합니다.</li>
+  <li>4XX 코드는 클라이언트의 원인으로 에러가 발생했음을 의미합니다.</li>
+  <li>5XX 코드는 서버의 원인으로 에러가 발생했음을 의미합니다.</li>
+</ul>
 <hr>
 </details>
 
@@ -19,7 +28,7 @@
 <details>
 <summary><strong>HTTP 프로토콜이 무엇인가요?</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>데이터를 주고받기 위한 프로토콜이며 서버/클라이언트 모델을 따릅니다.</li></ul>
 <hr>
 </details>
 
@@ -27,7 +36,9 @@
 <details>
 <summary><strong>HTTP와 HTTPS의 차이점(+ 통신 방식의 차이)이 무엇인가요?</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>HTTP는 평문 데이터를 전송하는 프로토콜이기 때문에, HTTP로 중요한 정보를 주고 받으면 제 3자에 의해 조회될 수 있습니다. 이러한 문제를 해결하기 위해 HTTP에 암호화가 추가된 프로토콜이 HTTPS입니다.</li>
+  <li>HTTP는 원래 TCP와 직접 통신했지만, HTTPS에서 HTTP는 SSL과 통신하고 SSL이 TCP와 통신함으로써 암호화와 증명서, 안전성 보호를 이용할 수 있게 됩니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -35,7 +46,10 @@
 <details>
 <summary><strong>HTTP의 비연결성을 해결하기 위한 방법을 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>이러한 문제를 해결하기 위한 방법으로 Cookie 가 있습니다. 서버로부터 받은 쿠키정보를 클라이언트에 저장하고 다음번에 클라이언트가 같은 서버로 리퀘스트를 보낼 때 자동으로 쿠키값을 넣어서 송신합니다. 서버는 클라이언트가 보낸 쿠키값으로 클라이언트를 확인하고 서버상의 기록을 찾아 이전 상태를 알수있습니다.</li>
+  <li>비연결성으로 인한 문제 : Http는 stateless 프로토콜로 과거의 request&respond 상태를 관리하지 않습니다. 이에 과거의 상태를 근거로 현재의 리퀘스트를 처리하는 것은 불가능합니다. 예를 들면, 인증이 필요한 웹 페이지의 상태를 관리하지 않으면 새로운 페이지로 이동할 때 마다 로그인 정보를 보내야합니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -43,7 +57,10 @@
 <details>
 <summary><strong>쿠키(Cookie)와 세션(Session)의 차이점에 대해서 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>쿠키는 접속자의 컴퓨터에 저장하는 작은 기록 정보 파일입니다. HTTP에서 클라이언트의 상태 정보를 PC에 저장했다가 필요시 정보를 참조하거나 재사용할 수 있습니다. 세션은 일정 시간동안 같은 사용자로부터 들어오는 일련의 요구를 하나의 상태로 보고, 그 상태를 유지시키는 기술입니다. 방문자가 웹 서버에 접속해 있는 상태를 하나의 단위, 세션이라 하고 웹 서버에 저장합니다.</li>
+  <li>속도는 쿠키가 세션보다 빠르지만, 보안은 세션이 더 뛰어납니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -51,7 +68,14 @@
 <details>
 <summary><strong>HTTP method에 대해 아는 만큼 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>HTTP method는 클라이언트가 서버에게 사용자 요청의 목적을 알리는 방법입니다.</li>
+  <li>GET : 데이터 조회</li>
+  <li>POST : 데이터 등록</li>
+  <li>PUT : 데이터 변경</li>
+  <li>PATCH : 일부 데이터 변경</li>
+  <li>DELETE : 데이터 삭제</li>
+  </ul>
 <hr>
 </details>
 
@@ -67,7 +91,10 @@
 <details>
 <summary><strong>GET과 POST 차이점이 무엇인가요?</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>GET은 데이터를 조회하기 위해 사용되는 방식으로 데이터를 헤더에 추가하여 전송하는 방식입니다. URL에 데이터가 노출되므로 보안적으로 중요한 데이터를 포함해서는 안됩니다.</li>
+  <li>POST는 보통 데이터를 등록하기 위해 사용되는 방식으로 데이터를 바디에 추가하여 전송하는 방식입니다. URL에 데이터가 노출되지 않아 GET 보다는 안전합니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -75,7 +102,15 @@
 <details>
 <summary><strong>RESTFUL API의 URL 네이밍 규칙에 대해 설명해보세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>소문자 사용</li>
+  <li>언더바(_) 사용 금지 대신 하이픈(-) 사용</li>
+  <li>URI의 마지막에는 슬래시를 포함하지 않음</li>
+  <li>계층관계를 나타낼 때는 슬래시 구분자 사용</li>
+  <li>파일 확장자를 URI에 포함시키지 않음</li>
+  <li>전달하고자 하는 자원의 명사를 사용, 컨트롤 자원을 의미하는 경우 예외적으로 동사를 허용 → 자원의 행위는 HTTP Method를 사용</li>
+  <li>클라이언트 또는 서버에서 관리하는 리소스는 복수형으로 표현, 인스턴스는 단수로 표현 (ex. /users/:userIdx, /users/photo)</li>
+  </ul>
 <hr>
 </details>
 
