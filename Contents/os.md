@@ -38,3 +38,10 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+<details>
+<summary><strong>LRU  무엇인가요?</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
