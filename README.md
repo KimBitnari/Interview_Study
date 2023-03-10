@@ -8,7 +8,7 @@
 - [네트워크](https://github.com/haerin7427/Interview_Study/blob/main/Contents/network.md)
 - [JAVA](https://github.com/haerin7427/Interview_Study/blob/main/Contents/java.md)
 - [WEB](https://github.com/haerin7427/Interview_Study/blob/main/Contents/web.md)
-
+<br></br>
 
 ### 💡 문제 모으기
 * 매주 `금요일`까지 다음 주에 공부할 카테고리에 속하는 질문 모으기
@@ -19,7 +19,7 @@
 <br></br>
 
 ### 💡 스터디 방식
-* [wiki에 계획 ](https://github.com/haerin7427/Interview_Study/wiki)
+* [wiki에 계획 작성](https://github.com/haerin7427/Interview_Study/wiki)
 * 매주 월요일 구글밋으로 스터디
 * 스터디 전까지 정해진 카테고리 면접 질문 공부하기
 * 실제 면접처럼 질문하기
