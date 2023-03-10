@@ -237,3 +237,66 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+<details>
+<summary><strong>데이터베이스의 특징에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>쿼리의 수행 순서를 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>inner join과 outer join의 차이를 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>데이터베이스에서 다양한 유형의 관계에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>데이터베이스 뷰에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>데이터베이스 뷰의 장점과 단점을 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>ER 모델에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>기본 키(Primary key)와 복합 키(Compound key)에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+<details>
+<summary><strong>트랜잭션 상태에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
