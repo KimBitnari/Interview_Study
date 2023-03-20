@@ -347,7 +347,7 @@
 <details>
 <summary><strong>쿼리의 수행 순서를 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>FROM - WHERE GROUP BY - HAVING - SELECT - ORDER BY 순서대로 실행이 됩니다.</li></ul>
 <hr>
 </details>
 
