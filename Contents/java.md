@@ -17,6 +17,14 @@
 
 
 <details>
+<summary><strong>JAVA GC의 장단점을 설명해보세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
 <summary><strong>FULL GC는 언제 발생하나요?</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
@@ -98,6 +106,14 @@
 
 
 <details>
+<summary><strong>Java의 장단점을 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
 <summary><strong>JVM의 역할에 대해 설명해주세요</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
@@ -123,6 +139,22 @@
 
 <details>
 <summary><strong>객체지향 프로그래밍(OOP)에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>OOP의 4가지 특징을 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>OOP의 5대 원칙(SOLID)에 대해 설명해주세요</strong></summary>  
 <hr>
 <ul><li>답변</li></ul>
 <hr>
@@ -199,3 +231,92 @@
 <ul><li>답변</li></ul>
 <hr>
 </details>
+
+
+<details>
+<summary><strong>JAVA SE와 JAVA EE 어플리케이션의 차이를 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>직렬화(Serialize)에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>jdbc에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>데드락이 무엇이고, 해결방법에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>상속과 컴포지션(합성)의 차이에 대해서 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>Array와 List의 차이에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>List와 Map의 차이에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>싱글톤 패턴에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>리플렉션(Reflection)이란 무엇인지 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>new String()과 ""의 차이에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
+
+<details>
+<summary><strong>예외 처리 방법에 대해 설명해주세요</strong></summary>  
+<hr>
+<ul><li>답변</li></ul>
+<hr>
+</details>
+
