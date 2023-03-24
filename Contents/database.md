@@ -260,7 +260,12 @@
 <details>
 <summary><strong>데이터베이스 언어(DDL, DML, DCL)에 대해 설명해주세요.</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>DDL : 데이터베이스 구조를 정의, 수정, 삭제하는 데이터 정의어 입니다. CREATE, ALTER, DROP 등이 있습니다.</li>
+  <li>DML : 데이터베이스 내의 자료 검색, 삽입, 갱신, 삭제를 위한 데이터 조작어 입니다. SELECT, INSERT, UPDATE, DELETE 등이 있습니다.</li>
+  <li>DCL : 데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 데이터 제어어 입니다. GRANT, REVOKE 등이 있습니다.</li>
+  <li>TCL : 논리적인 작업의 단위를 묶어서 DML에 의해 조작된 결과를 작업 단위(트랜잭션) 별로 제어하는 트랜잭션 제어어 입니다. COMMIT, ROLLBACK, SAVEPOINT 등이 있습니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -268,7 +273,11 @@
 <details>
 <summary><strong>트리거(Trigger)에 대해 설명해주세요.</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>트리거는 특정 테이블에 대한 이벤트에 반응해 INSERT, DELETE, UPDATE 같은 DML문이 수행되었을 때, 데이터베이스에서 자동으로 동작하도록 작성된 프로그램입니다.</li>
+  <li>사용자가 직접 호출하는 것이 아닌, 데이터베이스에서 자동적으로 호출하는 것이 가장 큰 특징입니다.</li>
+  <li>예를 들면, 쇼핑몰에 주문한 건이 DB에 입력될 때마다 일자별, 상품별로 판매수량과 판매금액을 계산하여 집계자료를 보관하도록 만들었습니다. 이에 수천명의 임직원들이 주문 실적을 조회할 때 마다 수만건의 데이터를 읽고 계산하며 성능이 저하되는 문제를 예방할 수 있습니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -276,7 +285,9 @@
 <details>
 <summary><strong>옵티마이저(Optimizer)에 대해 설명해주세요.</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>옵티마이저는 SQL을 가장 빠르고 효율적으로 수행할 최적의 처리 경로를 생성해주는 DBMS 내부의 핵심 엔진입니다. 사용자가 구조화된 질의어(SQL)로 결과 집합을 요구하면, 이를 생성하는데 필요한 처리경로를 DBMS에 내장된 옵티마이저가 자동으로 생성합니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -285,7 +296,7 @@
 <details>
 <summary><strong>DB 튜닝이 무엇인지 설명해주세요.</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>DB의 구조나, DB 자체, 운영체제 등을 조정하여 DB 시스템의 전체적인 성능을 개선하는 작업을 말합니다.</li></ul>
 <hr>
 </details>
 
@@ -293,7 +304,12 @@
 <details>
 <summary><strong>DB 튜닝의 3단계에 대해 설명해주세요.</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>튜닝은 DB 설계 튜닝, DBMS 튜닝, SQL 튜닝 순의 3단계로 진행합니다.</li>
+  <li>DB 설계 튜닝 단계는 성능을 고려하여 데이터 모델링, 인덱스 등을 설계합니다. 튜닝 사례로 반정규화, 분산 파일 배치 배치 등이 있습니다.</li>
+  <li>DBMS 튜닝은 CPU, 메모리 I/O등 환경관점에서 튜닝합니다. 튜닝 사례로 Buffer 크기, Cache 크기 등이 있습니다.</li>
+  <li>SQL은 SQL 작성 시 성능을 고려하여 App관점에서 튜닝합니다. 튜닝 사례로 Hash, Join이 있습니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -301,7 +317,7 @@
 <details>
 <summary><strong>group by 역할에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>group by 명령어를 통해 특정 컬럼을 기준으로 그룹화 할 수 있습니다. 그룹화를 하여 조회된 데이터의 통계를 내기 위한 집계함수(count, avg, max, min)을 사용하기 편리합니다.</li></ul>
 <hr>
 </details>
 
@@ -309,7 +325,11 @@
 <details>
 <summary><strong>DELETE, TRUNCATE, DROP의 차이에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>DELETE는 데이터를 지우고 테이블의 용량은 줄어들지 않습니다. 삭제 후 되돌릴 수 있습니다.</li>
+  <li>TRUNCATE는 전체 데이터를 한 번에 삭제합니다. 테이블의 용량이 줄어들고 인덱스 등도 삭제됩니다. 하지만, 테이블은 삭제할 수 없고 삭제 후 되돌릴 수 있습니다.</li>
+  <li>DROP은 테이블 자체를 완전히 삭제하는 방식입니다. 삭제 후 되돌릴 수 없습니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -317,7 +337,11 @@
 <details>
 <summary><strong>데이터베이스 클러스터링과 리플리케이션의 차이에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>클러스터링은 동일한 데이터베이스를 여러 대의 서버가 관리하도록 클러스터를 구축하는 것입니다.</li>
+  <li>리플리케이션은 복제본 데이터베이스를 운용하는 것 입니다.</li>
+  <li>클러스터링은 단순히 데이터베이스 서버를 확장한 것이라면 리플리케이션은 데이터베이스 서버와 스토리지 모두를 확장하게 된다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -325,7 +349,10 @@
 <details>
 <summary><strong>HAVING과 WHERE 차이에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>Having은 그룹을 필터링 하는 데 사용되고, where은 개별 행을 필터링하는데 사용됩니다.</li>
+  <li>having은 그룹화 또는 집계가 발생한 후 필터링하는 데 사용되고 where은 그룹화 또는 집계가 발생하기 전에 필터링하는 데 사용됩니다.</li>
+  </ul>
 <hr>
 </details>
 
@@ -333,69 +360,94 @@
 <details>
 <summary><strong>JOIN에서 ON과 WHERE 차이에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>ON이 WHERE보다 먼저 실행되어 JOIN 전에 필터링을 하고 WHERE은 JOIN을 한 후에 필터링을 합니다.</li></ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>데이터베이스의 특징에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>실시간 접근성 : 비정형적인 질의(조회)에 대하여 실시간 처리에 의한 응답이 가능해야 합니다.</li>
+  <li>지속적인 변화 : 데이터베이스의 상태는 동적입니다. 새로운 데이터의 삽입, 삭제, 갱신으로 항상 최신의 데이터를 유지해야 합니다.</li>
+  <li>동시 공용 : 데이터베이스는 서로 다른 목적을 가진 여러 응용자들을 위한 것이므로 다수의 사용자가 동시에 같은 내용의 데이터를 이용할 수 있어야 합니다.</li>
+  <li>데이터베이스에 있는 데이터를 참조할 때 데이터 레코드의 주소나 위치에 의해서가 아니라 사용자가 요구하는 데이터 내용으로 찾습니다.</li>
+  </ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>쿼리의 수행 순서를 설명해주세요</strong></summary>  
 <hr>
-<ul><li>FROM - WHERE GROUP BY - HAVING - SELECT - ORDER BY 순서대로 실행이 됩니다.</li></ul>
+<ul><li>FROM, JOIN > WHERE > GROUP BY > HAVING  > SELECT > DISTINCT > ORDER BY > LIMIT 순서로 실행됩니다.</li></ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>inner join과 outer join의 차이를 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>inner join은 서로 연관된 내용만 검색하는 조인 방법 입니다.</li>
+  <li>outer join은 연관되지 않은 내용도 모두 검색하는 조인 방법입니다. </li>
+  <ul><li>종류 : left outer join, right outer join, full outer join</li></ul>
+  </ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>데이터베이스에서 다양한 유형의 관계에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>1 : 1 - 두 엔티티간에 한 번씩만 관계를 맺을 때 사용된다. (사원 ↔ 가족사항)</li>
+  <li>1 : M - 엔티티에서 다른 엔티티와의 관계 수가 여러번 정의되지만, 반대의 경우 한번만 정의 될때 사용된다. (사원 ↔ 부서)</li>
+  <li>N : M - 두 엔티티 간의 관계가 서로 여러번 정의 될때 사용된다. (학생 ↔ 수업)</li>
+  </ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>데이터베이스 뷰에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>허용된 데이터를 제한적으로 보여주기 위해 하나 이상의 테이블에서 유도된 가상 테이블입니다.</li></ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>데이터베이스 뷰의 장점과 단점을 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>장점 : 복잡한 쿼리를 단순화해서 사용할 수 있다. 특정 사용자에게 테이블 전체가 아닌 필요한 필드만 보여줄 수 있다.</li>
+  <li>단점 : 한 번 정의된 뷰는 변경이 불가능하다. 삽입, 삭제, 갱신 작업에 많은 제한 사항을 가진다., 자신만의 인덱스를 가질 수 없다.</li>
+  </ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>ER 모델에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul><li>ER 모델은 요구사항으로부터 얻어낸 정보들을 개체, 애트리뷰트, 관계성으로 기술하는 데이터 모델입니다.</li></ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>기본 키(Primary key)와 복합 키(Compound key)에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>기본키 : 테이블에서 튜플을 구분지어주는 고유 식별 값이다.</li>
+  <li>복합키 : 두 개 이상의 컬럼을 묶어서 만든 하나의 기본키이다.</li>
+  </ul>
 <hr>
 </details>
 
 <details>
 <summary><strong>트랜잭션 상태에 대해 설명해주세요</strong></summary>  
 <hr>
-<ul><li>답변</li></ul>
+<ul>
+  <li>활동 (Active) : 트랜잭션이 실행 중에 있는 상태, 연산들이 정상적으로 실행 중인 상태</li>
+  <li>장애 (Failed) : 트랜잭션이 실행에 오류가 발생하여 중단된 상태</li>
+  <li>철회 (Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태</li>
+  <li>부분 완료 (Partially Committed) : 트랜잭션이 마지막 연산까지 실행했지만, Commit 연산이 실행되기 직전의 상태</li>
+  <li>완료 (Committed) : 트랜잭션이 성공적으로 종료되어 Commit 연산응 실행한 후의 상태</li>
+  </ul>
 <hr>
 </details>
